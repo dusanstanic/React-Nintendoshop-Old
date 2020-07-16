@@ -4,6 +4,8 @@ import "./App.css";
 
 import { GameM } from "./models/GameM";
 
+import Games from "./Components/Games/Games";
+
 class App extends Component {
   state: { games: GameM[] } = {
     games: [
@@ -11,7 +13,7 @@ class App extends Component {
         id: 1,
         title: "Luigi's Mansion 3",
         description: "description",
-        releaseDate: new Date(2017, 11, 2),
+        releaseDate: new Date(2017, 8, 2),
         price: 8000,
         pgRating: "E",
         image: "",
@@ -24,6 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome to Nintendo Shop</h1>
+        <Games games={this.state.games} />
       </div>
     );
   }
