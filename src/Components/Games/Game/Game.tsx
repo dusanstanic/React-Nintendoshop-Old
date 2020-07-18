@@ -33,6 +33,7 @@ const Game = (props: Props) => {
       <td>{props.game.description}</td>
       <td>{formatDate()}</td>
       <td>{props.game.price}</td>
+      <td>{props.game.genre.type}</td>
     </tr>
   );
 };

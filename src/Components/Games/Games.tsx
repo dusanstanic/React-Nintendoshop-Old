@@ -1,4 +1,5 @@
 import React from "react";
+import "./Games.css";
 
 import { GameM } from "../../models/GameM";
 
@@ -20,6 +21,7 @@ const Games = (props: Props) => {
             <th>Description</th>
             <th>Release Date</th>
             <th>Price</th>
+            <th>Genre</th>
           </tr>
         </thead>
         <tbody>
