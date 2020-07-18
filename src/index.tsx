@@ -4,15 +4,13 @@ import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
 
-import Header from "./Components/header/header";
-import App from "./Containers/App";
+import Header from "./Components/Header/Header";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
