@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import "./App.css";
-import { getGames } from "../Service/GameService";
+import { getGames } from "../service/GameService";
 import { GameM } from "../models/GameM";
 
-import Games from "../Components/Games/Games";
+import Games from "./Games/Games";
+import GameDetails from "./Games/Game/GameDetails/GameDetails";
 
-class App extends Component {
-  state: { games: GameM[] } = {
+import { RouteComponentProps, Route } from "react-router-dom";
+
+interface Props extends RouteComponentProps<{}> {}
+interface State {
+  games: GameM[];
+}
+
+class App extends Component<Props, State> {
+  state = {
     games: [
       {
         id: 1,
@@ -28,9 +36,10 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="App">
-        <Games games={this.state.games} />
+        <Games {...this.props} games={this.state.games} />
       </div>
     );
   }

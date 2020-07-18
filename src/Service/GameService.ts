@@ -28,3 +28,12 @@ export function getGames(): Promise<GameM[]> {
       return gamesUpdatedDate;
     });
 }
+
+export function getGame(id: number): Promise<GameM> {
+  return axios
+    .get<GameM>("http://localhost:8080/games/" + id)
+    .then((response) => {
+      console.log(response);
+      return response.data;
+    });
+}

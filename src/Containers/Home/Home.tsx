@@ -1,9 +1,12 @@
 import React from "react";
 
-const Home = () => {
+import News from "./News/News";
+
+const Home = (props: any) => {
   return (
     <div>
       <h1>Home</h1>
+      <News />
     </div>
   );
 };
