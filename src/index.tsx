@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+
+import { BrowserRouter, RouteComponentProps } from "react-router-dom";
+
+import Header from "./Components/Header/Header";
+import Games from "./Containers/Games/Games";
+import * as serviceWorker from "./serviceWorker";
+
+interface Props extends RouteComponentProps<{}> {}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

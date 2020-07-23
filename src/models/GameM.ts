@@ -1,3 +1,5 @@
+import { GenreM } from "./GenreM";
+
 export interface GameM {
   id: number;
   title: string;
@@ -6,5 +8,5 @@ export interface GameM {
   price: number;
   pgRating: string;
   image: string;
-  genreId: number;
+  genre: GenreM;
 }
