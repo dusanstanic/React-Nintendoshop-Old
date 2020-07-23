@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import { getGames } from "../service/GameService";
+import { getGames } from "../Service/GameService";
 import { GameM } from "../models/GameM";
 
 import Games from "./Games/Games";
-import GameDetails from "./Games/Game/GameDetails/GameDetails";
 
-import { RouteComponentProps, Route } from "react-router-dom";
+import { RouteComponentProps } from "react-router-dom";
 
 interface Props extends RouteComponentProps<{}> {}
 interface State {
