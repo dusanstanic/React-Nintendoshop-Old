@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { getGames } from "../Service/GameService";
+import { getGames } from "../service/GameService";
 import { GameM } from "../models/GameM";
 
 import Games from "./Games/Games";

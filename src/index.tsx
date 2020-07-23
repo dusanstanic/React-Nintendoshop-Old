@@ -5,7 +5,6 @@ import "./index.css";
 import { BrowserRouter, RouteComponentProps } from "react-router-dom";
 
 import Header from "./Components/Header/Header";
-import Games from "./Containers/Games/Games";
 import * as serviceWorker from "./serviceWorker";
 
 interface Props extends RouteComponentProps<{}> {}
