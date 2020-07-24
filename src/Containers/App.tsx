@@ -35,7 +35,7 @@ class App extends Component<Props, State> {
   }
 
   render() {
-    console.log(this.props);
+    console.log("App.tsx");
     return (
       <div className="App">
         <Games {...this.props} games={this.state.games} />
