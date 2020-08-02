@@ -3,7 +3,7 @@ import "./Header.css";
 
 import { Route, NavLink, Switch } from "react-router-dom";
 
-import App from "../../Containers/App";
+import App from "../../Containers/App/App";
 import Home from "../../Containers/Home/Home";
 import Aux from "../../hoc/Auxiliary";
 
