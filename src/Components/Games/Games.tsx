@@ -5,7 +5,7 @@ import { Route, RouteComponentProps } from "react-router-dom";
 import { GameM } from "../../models/GameM";
 
 import Game from "./Game/Game";
-import GameDetails from "./Game/GameDetails/GameDetails";
+import GameDetails from "./GameDetails/GameDetails";
 
 interface Props extends RouteComponentProps<{}>, Games {}
 
@@ -22,7 +22,7 @@ const Games = (props: Props) => {
   };
 
   const games = props.games;
-  console.log(props);
+  // console.log(props);
   return (
     <div>
       <h1>Games</h1>

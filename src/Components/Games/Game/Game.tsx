@@ -13,7 +13,7 @@ interface Game {
 }
 
 const Game = (props: Props) => {
-  console.log(props);
+  // console.log(props);
   const date = props.game.releaseDate;
 
   const formatDate = (): string => {
