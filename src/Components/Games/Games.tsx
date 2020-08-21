@@ -22,7 +22,7 @@ const Games = (props: Props) => {
   };
 
   const games = props.games;
-  // console.log(props);
+  console.log(props);
   return (
     <div>
       <h1>Games</h1>
